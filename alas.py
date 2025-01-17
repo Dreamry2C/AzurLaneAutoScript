@@ -92,6 +92,9 @@ class AzurLaneAutoScript:
             self.save_error_log()
             logger.warning(f'Game stuck, {self.device.package} will be restarted in 10 seconds')
             logger.warning('If you are playing by hand, please stop Alas')
+            from module.handler.info_handler import InfoHandler
+            info_handler = InfoHandler(config=self.config,device=self.device)
+            info_handler.handle_urgent_commission()
             self.config.task_call('Restart')
             self.device.sleep(10)
             return False
@@ -165,6 +168,30 @@ class AzurLaneAutoScript:
                     content=f"<{self.config_name}> RequestHumanTakeover",
                 )
                 exit(1)
+        except MapWalkError as e:
+            if self.AutoRestart_Enabled and self.GameRestartBecauseErrorTimes <= self.AutoRestart_AttemptsToRestart:
+                if self.AutoRestart_NotifyWhenAutoRestart:
+                    handle_notify(
+                        self.config.Error_OnePushConfig,
+                        title=f"Alas <{self.config_name}> crashed",
+                        content=f"<{self.config_name}> Exception occured",
+                    )
+                self.config.task_call('Restart')
+                self.GameRestartBecauseErrorTimes += 1
+                logger.critical(f'left Restart Time: {self.AutoRestart_AttemptsToRestart-self.GameRestartBecauseErrorTimes}')
+                self.device.sleep(10)
+                return False
+            else:
+                self.GameRestartBecauseErrorTimes = 0
+                logger.critical('MapWalkError')
+                logger.exception(e)
+                self.save_error_log()
+                handle_notify(
+                    self.config.Error_OnePushConfig,
+                    title=f"Alas <{self.config_name}> crashed",
+                    content=f"<{self.config_name}> Exception occured",
+                )
+                exit(1)                
         except AutoSearchSetError:
             logger.critical('Auto search could not be set correctly. Maybe your ships in hard mode are changed.')
             logger.critical('Request human takeover.')
