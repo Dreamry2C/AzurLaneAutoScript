@@ -193,6 +193,10 @@ def retry_sleep(trial):
     # Failed twice
     elif trial == 2:
         return 1
+    elif trial == 3:
+        return 3
+    elif trial == 4:
+        return 5
     # Failed more
     else:
         return RETRY_DELAY

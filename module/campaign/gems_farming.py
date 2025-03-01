@@ -351,14 +351,9 @@ class GemsFarming(CampaignRun, Dock, EquipmentChange):
             max_level = 100
         else:
             max_level = 70
-        from module.gg_handler.gg_data import GGData
-        _ggdata = GGData(self.config).get_data()
-        if _ggdata['gg_enable'] and _ggdata['gg_auto'] and self.config.GemsFarming_ALLowLowVanguardLevel:
-            min_level = 2
-        else:
-            min_level = max_level
-        if self.hard_mode:
-            min_level = max(min_level, 49)
+
+        min_level = max_level
+
         scanner = ShipScanner(level=(min_level, max_level), emotion=(emotion, 150),
                               fleet=self.config.Fleet_Fleet1, status='free')
         scanner.disable('rarity')
