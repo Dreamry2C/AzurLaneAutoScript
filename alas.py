@@ -491,6 +491,10 @@ class AzurLaneAutoScript:
         from module.daemon.daemon import AzurLaneDaemon
         AzurLaneDaemon(config=self.config, device=self.device, task="Daemon").run()
 
+    def event_story(self):
+        from module.eventstory.eventstory import EventStory
+        EventStory(config=self.config, device=self.device, task="EventStory").run()
+
     def opsi_daemon(self):
         from module.daemon.os_daemon import AzurLaneDaemon
         AzurLaneDaemon(config=self.config, device=self.device, task="OpsiDaemon").run()
