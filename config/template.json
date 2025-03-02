@@ -1965,6 +1965,13 @@
       "Storage": {}
     }
   },
+  "EventStory": {
+    "EventStory": {
+    },
+    "Storage": {
+      "Storage": {}
+    }
+  },
   "Benchmark": {
     "Benchmark": {
       "DeviceType": "emulator",

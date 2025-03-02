@@ -258,6 +258,10 @@
       "name": "OpSi Semi-auto",
       "help": ""
     },
+    "EventStory": {
+      "name": "Event story semi-auto",
+      "help": "Useful when there are additional plotlines in the event,, which can reduce a lot of manual operations\nAlas will help quickly skip plots, battles\nWhen encountering a combat level, it will automatically restart and skip"
+    },
     "Benchmark": {
       "name": "Performance Test",
       "help": ""

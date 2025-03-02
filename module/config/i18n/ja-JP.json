@@ -258,6 +258,10 @@
       "name": "セイレーン作戦半自動",
       "help": ""
     },
+    "EventStory": {
+      "name": "イベントプロット半自動",
+      "help": "Useful when there are additional plotlines in the event,, which can reduce a lot of manual operations\nAlas will help quickly skip plots, battles\nWhen encountering a combat level, it will automatically restart and skip"
+    },
     "Benchmark": {
       "name": "機能テスト",
       "help": ""
