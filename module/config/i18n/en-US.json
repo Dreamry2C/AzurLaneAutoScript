@@ -254,6 +254,10 @@
       "name": "OpSi Semi-auto",
       "help": ""
     },
+    "EventStory": {
+      "name": "Event story semi-auto",
+      "help": ""
+    },
     "Benchmark": {
       "name": "Performance Test",
       "help": ""

@@ -254,6 +254,10 @@
       "name": "大世界半自動",
       "help": ""
     },
+    "EventStory": {
+      "name": "活動劇情半自動",
+      "help": ""
+    },
     "Benchmark": {
       "name": "性能測試",
       "help": ""

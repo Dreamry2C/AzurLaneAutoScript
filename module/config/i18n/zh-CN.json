@@ -254,6 +254,10 @@
       "name": "大世界半自动",
       "help": ""
     },
+    "EventStory": {
+      "name": "活动剧情半自动",
+      "help": ""
+    },
     "Benchmark": {
       "name": "性能测试",
       "help": ""

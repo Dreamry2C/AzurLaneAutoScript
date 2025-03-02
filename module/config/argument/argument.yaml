@@ -728,6 +728,7 @@ Daemon:
 OpsiDaemon:
   RepairShip: true
   SelectEnemy: true
+Eventstory:
 Benchmark:
   DeviceType:
     value: emulator
