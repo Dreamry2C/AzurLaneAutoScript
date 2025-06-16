@@ -484,10 +484,6 @@ class OperationSiren(OSMap):
             self.run_strategic_search()
 
             self.handle_after_auto_search()
-            if deep_get(self.config.data, "ResearchFarmingSetting.OpsiHazard1ResearchFarming.Enable", False):
-                from module.research_farming.farming import ResearchFarming
-                ResearchFarming(config=self.config, device=self.device).CheckResearchShipExperience()
-                self.ui_goto(page_os)
             self.config.check_task_switch()
 
     def _os_explore_task_delay(self):

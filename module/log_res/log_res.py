@@ -22,7 +22,6 @@ class LogRes:
     Medal: int
     Merit: int
     GuildCoin: int
-    ResearchPercent: int
     AlasCoin: int
 
     def __init__(self, config):

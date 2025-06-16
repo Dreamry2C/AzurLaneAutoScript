@@ -584,12 +584,6 @@ class OSMap(OSFleet, Map, GlobeCamera, StrategicSearchHandler):
             # End
             if self.is_in_main():
                 logger.info('Auto search interrupted')
-
-                if deep_get(self.config.data, "ResearchFarmingSetting.OpsiHazard1ResearchFarming.Enable", False):
-                    from module.research_farming.farming import ResearchFarming
-                    ResearchFarming(config=self.config, device=self.device).CheckResearchShipExperience()
-                    self.ui_goto(page_main)
-
                 self.config.task_stop()
 
             if self.appear_then_click(AUTO_SEARCH_REWARD, offset=(50, 50), interval=3):
