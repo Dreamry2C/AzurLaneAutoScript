@@ -8,7 +8,7 @@ from module.combat.assets import GET_ITEMS_1, GET_ITEMS_2, GET_SHIP
 from module.config.deep import deep_get
 from module.event_hospital.assets import HOSIPITAL_CLUE_CHECK, HOSPITAL_BATTLE_EXIT
 from module.exception import (GameNotRunningError, GamePageUnknownError,
-                              GameTooManyClickError)
+                              GameTooManyClickError, RequestHumanTakeover)
 from module.exercise.assets import EXERCISE_PREPARATION
 from module.handler.assets import (AUTO_SEARCH_MENU_EXIT, BATTLE_PASS_NEW_SEASON, BATTLE_PASS_NOTICE, GAME_TIPS,
                                    LOGIN_ANNOUNCE, LOGIN_ANNOUNCE_2, LOGIN_CHECK, LOGIN_RETURN_SIGN,
