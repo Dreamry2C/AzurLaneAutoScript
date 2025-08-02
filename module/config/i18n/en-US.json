@@ -757,7 +757,7 @@
       "event_20220728_cn": "Aquilifers Ballade Rerun",
       "event_20220818_cn": "Operation Convergence Return",
       "event_20220915_cn": "Violet Tempest Blooming Lycoris Rerun",
-      "event_20221124_cn": "The Alchemist and the Archipelago of Secrets",
+      "event_20221124_cn": "The Alchemist and the Archipelago of Secrets Rerun",
       "event_20221222_cn": "Parallel Superimposition Rerun",
       "event_20230223_cn": "Revelations of Dust Rerun",
       "event_20230525_cn": "Confluence of Nothingness Rerun",
@@ -2127,6 +2127,10 @@
     "BuyRoses": {
       "name": "Buy Weekly Roses",
       "help": "On week reset, roses will be available for purchase\nThe purchase is made in bulk wholsesale or none at all\nMinimum of 24K coin is required, if not enough subtask will be delayed to the next day and try again then"
+    },
+    "BuyCake": {
+      "name": "Buy Weekly Cake",
+      "help": "Ditto, minimum of 210 gems is required however"
     },
     "TargetInteract": {
       "name": "Enable Daily Interact",
