@@ -565,7 +565,6 @@ MeritShop:
 CoreShop:
   Filter: |-
     Array
-EventShop:
   Enable: false
   UnlockShipSSR: false
   BuyShipUR:

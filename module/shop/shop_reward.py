@@ -4,8 +4,6 @@ from module.shop.shop_guild import GuildShop, GuildShop_250814
 from module.shop.shop_medal import MedalShop2, MedalShop_250814
 from module.shop.shop_merit import MeritShop, MeritShop_250814
 from module.shop.ui import ShopUI
-from module.shop_event.shop_event import EventShop
-from module.shop_event.ui import OCR_EVENT_SHOP_SECOND_ENSURE
 
 
 class RewardShop(ShopUI):
