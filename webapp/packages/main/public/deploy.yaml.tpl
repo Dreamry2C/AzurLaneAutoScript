@@ -1,8 +1,8 @@
 Deploy:
   Git:
     # URL of AzurLaneAutoScript repository
-    # [CN user] Use 'cn' to get update from git-over-cdn service
-    # [Other] Use 'global' to get update from https://github.com/LmeSzinc/StarRailCopilot
+    # [CN user] Use 'git://git.lyoko.io/AzurLaneAutoScript' for faster and more stable download
+    # [Other] Use 'https://github.com/LmeSzinc/AzurLaneAutoScript'
     Repository: {{repository}}
     # Branch of Alas
     # [Developer] Use 'dev', 'app', etc, to try new features
@@ -23,11 +23,6 @@ Deploy:
     # Update Alas at startup
     # [In most cases] Use true
     AutoUpdate: true
-    # Whether to keep local changes during update
-    # User settings, logs and screenshots will be kept, no mather this is true or false
-    # [Developer] Use true, if you modified the code
-    # [Other] Use false
-    KeepLocalChanges: false
 
   Python:
     # Filepath of python executable `python.exe`

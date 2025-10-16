@@ -1403,8 +1403,8 @@
       "ServerUpdate": "00:00"
     },
     "Awaken": {
-      "LevelCap": "level120",
-      "Favourite": false
+      "Favourite": false,
+      "LevelCap": "level120"
     },
     "Storage": {
       "Storage": {}

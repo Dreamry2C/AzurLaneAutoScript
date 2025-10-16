@@ -1673,18 +1673,14 @@
       "help": "認知覺醒船塢內所有的船隻直到心智單元耗盡"
     },
     "Favourite": {
-      "name": "Awaken.Favourite.name",
-      "help": "Awaken.Favourite.help"
+      "name": "僅覺醒常用艦船",
+      "help": ""
     },
     "LevelCap": {
       "name": "覺醒至等級上限",
       "help": "",
       "level120": "120級",
       "level125": "125級"
-    },
-    "Favourite": {
-      "name": "僅覺醒常用艦船",
-      "help": ""
     }
   },
   "GeneralShop": {

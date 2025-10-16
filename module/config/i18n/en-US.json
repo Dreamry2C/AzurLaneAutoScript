@@ -1673,18 +1673,14 @@
       "help": "Awaken all ships in dock til cognitive chips/arrays exhausted"
     },
     "Favourite": {
-      "name": "Awaken.Favourite.name",
-      "help": "Awaken.Favourite.help"
+      "name": "Awaken Favourite Ships Only",
+      "help": ""
     },
     "LevelCap": {
       "name": "To Level Cap",
       "help": "",
       "level120": "Lv.120",
       "level125": "Lv.125"
-    },
-    "Favourite": {
-      "name": "Awaken Favourite Ships Only",
-      "help": ""
     }
   },
   "GeneralShop": {

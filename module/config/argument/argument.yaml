@@ -286,21 +286,6 @@ GemsFarming:
     option: [ any, favourite, aulick_or_foote , cassin_or_downes, z20_or_z21 ]
   StopIFAutoNotEnsured: true
   CommissionLimit: true
-  Sort:
-    value: 'default'
-    option: ['default', 'rarity', 'level', 'total', 'join', 'intimacy', 'stat']
-  Index:
-    value: 'default'
-    option: ['default', 'all', 'vanguard', 'main', 'dd', 'cl', 'ca', 'bb', 'cv', 'repair', 'ss', 'others', 'not_available']
-  Faction:
-    value: 'default'
-    option: ['default', 'all', 'eagle', 'royal', 'sakura', 'iron', 'dragon', 'sardegna', 'northern', 'iris', 'vichya', 'other', 'not_available']
-  Rarity:
-    value: 'default'
-    option: ['default', 'all', 'common', 'rare', 'elite', 'super_rare', 'ultra']
-  Extra:
-    value: 'default'
-    option: ['default', 'no_limit', 'has_skin', 'can_retrofit', 'enhanceable', 'can_limit_break', 'not_level_max', 'can_awaken', 'can_awaken_plus', 'special', 'oath_skin', 'not_available']
 # ==================== Event ====================
 
 EventGeneral:
@@ -565,25 +550,6 @@ MeritShop:
 CoreShop:
   Filter: |-
     Array
-  Enable: false
-  UnlockShipSSR: false
-  BuyShipUR:
-    value: 0
-    option: [ 0, 1, 2 ]
-  PresetFilter:
-    value: all
-    option:
-      - all
-      - custom
-  CustomFilter: |-
-    EquipUR > EquipSSR > GachaTicket
-    > DR > PR > Array > Chip > CatT3
-    > Meta > SkinBox
-    > Oil > Coin > FoodT1
-    > AugmentCore > AugmentEnhanceT2 > AugmentChangeT2 > AugmentChangeT1
-    > Cube > Medal > ExpBookT1
-    > CatT2 > CatT1 > PlateGeneralT3 > PlateT3 > BoxT4
-    > ShipSSR
 ShipyardDr:
   ResearchSeries:
     value: 2

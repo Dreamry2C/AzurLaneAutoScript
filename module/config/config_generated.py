@@ -160,7 +160,6 @@ class GeneratedConfig:
     GemsFarming_StopIFAutoNotEnsured = True
     GemsFarming_CommissionLimit = True
 
-
     # Group `EventGeneral`
     EventGeneral_PtLimit = 0
     EventGeneral_TimeLimit = datetime.datetime(2020, 1, 1, 0, 0)
@@ -265,7 +264,6 @@ class GeneratedConfig:
     # Group `Awaken`
     Awaken_Favourite = False
     Awaken_LevelCap = 'level120'  # level120, level125
-    Awaken_Favourite = False
 
     # Group `GeneralShop`
     GeneralShop_UseGems = False
@@ -305,7 +303,6 @@ class GeneratedConfig:
 
     # Group `CoreShop`
     CoreShop_Filter = 'Array'
-
 
     # Group `ShipyardDr`
     ShipyardDr_ResearchSeries = 2  # 2, 3, 4

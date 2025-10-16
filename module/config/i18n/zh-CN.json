@@ -1673,7 +1673,7 @@
       "help": "认知觉醒船坞内所有的船直到心智单元耗尽"
     },
     "Favourite": {
-      "name": "选择常用",
+      "name": "仅觉醒常用舰船",
       "help": ""
     },
     "LevelCap": {
@@ -1681,10 +1681,6 @@
       "help": "",
       "level120": "120级",
       "level125": "125级"
-    },
-    "Favourite": {
-      "name": "仅觉醒常用舰船",
-      "help": ""
     }
   },
   "GeneralShop": {
